@@ -1,0 +1,53 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	width: 400px;
+	max-width: 600px;
+	height: auto;
+	margin: 15px;
+	padding: 20px;
+	background-color: bisque;
+	border-radius: 10px;
+}
+
+button {
+	border-radius: 5px;
+	border: 1px grey solid;
+	font-size: 1.3rem;
+}
+
+input {
+	width: 380px;
+	height: 50px;
+	font-size: 1.5rem;
+	text-align: right;
+	border-radius: 5px;
+}
+
+.operators {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+}
+
+.operators button {
+	width: auto;
+	height: 50px;
+	margin: 5px 0;
+}
+
+.numbers {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	width: 40px;
+}
+.buttons {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}

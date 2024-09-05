@@ -1,9 +1,3 @@
-:root {
-	--primary-color: #2b2c2c;
-	--button-color: #424343;
-	--operator-color: #ff9f0b;
-}
-
 body {
 	display: flex;
 	justify-content: center;
@@ -11,38 +5,27 @@ body {
 }
 
 .calculator {
-	width: 300px;
+	width: 400px;
 	max-width: 600px;
 	height: auto;
 	margin: 15px;
 	padding: 20px;
-	background-color: var(--primary-color);
+	background-color: bisque;
 	border-radius: 10px;
 }
 
 button {
-	border-radius: 30px;
+	border-radius: 5px;
+	border: 1px grey solid;
 	font-size: 1.3rem;
-	background-color: var(--button-color);
-	color: white;
-	border: none;
-}
-
-button:hover {
-	background-color: lightgrey;
-	cursor: pointer;
 }
 
 input {
-	width: 280px;
+	width: 380px;
 	height: 50px;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-align: right;
 	border-radius: 5px;
-	margin: 10px 5px;
-	background-color: var(--button-color);
-	padding: 5px 10px;
-	color: white;
 }
 
 .operators {
@@ -53,16 +36,15 @@ input {
 
 .operators button {
 	width: auto;
-	height: auto;
+	height: 50px;
 	margin: 5px 0;
-	background-color: var(--operator-color);
 }
 
 .numbers {
 	display: flex;
 	flex-wrap: wrap;
 	height: auto;
-	width: 250px;
+	width: 150px;
 }
 
 .buttons {
@@ -74,6 +56,6 @@ input {
 
 .btn {
 	font-size: 2rem;
-	padding: 10px 20px;
+	padding: 10px;
 	margin: 5px;
 }

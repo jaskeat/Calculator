@@ -22,10 +22,10 @@ body {
 
 button {
 	border-radius: 30px;
+	border: 1px grey solid;
 	font-size: 1.3rem;
 	background-color: var(--button-color);
 	color: white;
-	border: none;
 }
 
 button:hover {
@@ -42,7 +42,6 @@ input {
 	margin: 10px 5px;
 	background-color: var(--button-color);
 	padding: 5px 10px;
-	color: white;
 }
 
 .operators {
@@ -55,7 +54,6 @@ input {
 	width: auto;
 	height: auto;
 	margin: 5px 0;
-	background-color: var(--operator-color);
 }
 
 .numbers {

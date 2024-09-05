@@ -16,16 +16,14 @@ body {
 	height: auto;
 	margin: 15px;
 	padding: 20px;
-	background-color: var(--primary-color);
+	background-color: rgb(130, 130, 130);
 	border-radius: 10px;
 }
 
 button {
 	border-radius: 30px;
+	border: 1px grey solid;
 	font-size: 1.3rem;
-	background-color: var(--button-color);
-	color: white;
-	border: none;
 }
 
 button:hover {
@@ -40,9 +38,8 @@ input {
 	text-align: right;
 	border-radius: 5px;
 	margin: 10px 5px;
-	background-color: var(--button-color);
+	background-color: rgb(237, 218, 187);
 	padding: 5px 10px;
-	color: white;
 }
 
 .operators {
@@ -55,7 +52,6 @@ input {
 	width: auto;
 	height: auto;
 	margin: 5px 0;
-	background-color: var(--operator-color);
 }
 
 .numbers {
