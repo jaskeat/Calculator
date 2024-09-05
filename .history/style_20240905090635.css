@@ -1,0 +1,26 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color: bisque;
+	border-radius: 10px;
+}
+
+.btn {
+	border-radius: 5px;
+	border: 1px grey solid;
+	font-size: 1.3rem;
+}
+
+input {
+	height: 50px;
+	font-size: 1.5rem;
+	text-align: right;
+}

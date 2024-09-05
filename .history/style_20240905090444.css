@@ -1,0 +1,13 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+..calculator {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color: bisque;
+}
