@@ -1,0 +1,83 @@
+:root {
+	--primary-color: #2b2c2c;
+	--button-color: #424343;
+	--operator-color: #ff9f0b;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	width: 900px; /* Changed from 600px to 900px */
+	max-width: 1800px; /* Changed from 1200px to 1800px */
+	height: auto;
+	margin: 45px; /* Changed from 30px to 45px */
+	padding: 60px; /* Changed from 40px to 60px */
+	background-color: var(--primary-color);
+	border-radius: 30px; /* Changed from 20px to 30px */
+}
+
+button {
+	border-radius: 90px; /* Changed from 60px to 90px */
+	font-size: 3.9rem; /* Changed from 2.6rem to 3.9rem */
+	background-color: var(--button-color);
+	color: white;
+	border: none;
+}
+
+button:hover {
+	background-color: lightgrey;
+	cursor: pointer;
+}
+
+input {
+	width: 840px; /* Changed from 560px to 840px */
+	height: 150px; /* Changed from 100px to 150px */
+	font-size: 6rem; /* Changed from 4rem to 6rem */
+	text-align: right;
+	border-radius: 15px; /* Changed from 10px to 15px */
+	margin: 30px 15px; /* Changed from 20px 10px to 30px 15px */
+	background-color: var(--button-color);
+	padding: 15px 30px; /* Changed from 10px 20px to 15px 30px */
+	color: white;
+}
+
+.operators {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+}
+
+.operators button {
+	width: auto;
+	height: auto;
+	margin: 15px 0; /* Changed from 10px 0 to 15px 0 */
+	background-color: var(--operator-color);
+}
+
+.numbers {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	width: 750px; /* Changed from 500px to 750px */
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	font-size: 6rem; /* Changed from 4rem to 6rem */
+}
+
+.btn {
+	font-size: 6rem; /* Changed from 4rem to 6rem */
+	padding: 30px 60px; /* Changed from 20px 40px to 30px 60px */
+	margin: 15px; /* Changed from 10px to 15px */
+}
+
+.btn.highlighted {
+	background-color: #0080ff; /* Replace with your highlight color */
+}
