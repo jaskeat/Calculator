@@ -68,21 +68,7 @@ function calculate() {
 	}
 }
 
-// TODO: Add a function to clear buttons
 function clearDisplay() {
 	const display = document.getElementsByClassName("display-input");
 	display[0].value = "";
-	num1 = "";
-	num2 = "";
-	symbol = "";
-
-	const operatorButtons = document.getElementsByClassName("obtn");
-	for (let i = 0; i < operatorButtons.length; i++) {
-		operatorButtons[i].classList.remove("highlighted");
-	}
-}
-
-function deleteLast() {
-	const display = document.getElementsByClassName("display-input");
-	display[0].value = display[0].value.slice(0, -1);
 }

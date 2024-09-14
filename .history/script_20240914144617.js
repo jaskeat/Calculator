@@ -68,7 +68,6 @@ function calculate() {
 	}
 }
 
-// TODO: Add a function to clear buttons
 function clearDisplay() {
 	const display = document.getElementsByClassName("display-input");
 	display[0].value = "";

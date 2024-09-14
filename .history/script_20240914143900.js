@@ -4,10 +4,9 @@ let symbol;
 function append(number) {
 	const display = document.getElementsByClassName("display-input");
 
-	if (display[0].value.includes(".") && number === ".") {
-		return;
-	} else if (display[0].value.length <= 10) {
+	if (display[0].value.length <= 10) {
 		display[0].value = display[0].value + number;
+		return;
 	}
 }
 
@@ -49,6 +48,7 @@ function calculate() {
 	switch (symbol) {
 		case "+":
 			result = parseInt(num1) + parseInt(num2);
+			console.log(num1, num2, result);
 			display[0].value = result;
 			break;
 		case "-":
@@ -68,21 +68,7 @@ function calculate() {
 	}
 }
 
-// TODO: Add a function to clear buttons
 function clearDisplay() {
 	const display = document.getElementsByClassName("display-input");
 	display[0].value = "";
-	num1 = "";
-	num2 = "";
-	symbol = "";
-
-	const operatorButtons = document.getElementsByClassName("obtn");
-	for (let i = 0; i < operatorButtons.length; i++) {
-		operatorButtons[i].classList.remove("highlighted");
-	}
-}
-
-function deleteLast() {
-	const display = document.getElementsByClassName("display-input");
-	display[0].value = display[0].value.slice(0, -1);
 }
