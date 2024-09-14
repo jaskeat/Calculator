@@ -44,9 +44,13 @@ function calculate() {
 
 	let result;
 
+	console.log(num1);
+	console.log(num2[0].value);
+	console.log(typeof symbol);
+
 	switch (symbol) {
 		case "+":
-			result = parseInt(num1) + parseInt(num2);
+			result = parseFloat(num1) + parseFloat(num2);
 			console.log(result);
 			display[0].value = result;
 			break;

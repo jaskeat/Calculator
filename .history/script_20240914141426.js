@@ -10,7 +10,7 @@ function append(number) {
 	}
 }
 
-function operator(n, buttonElement) {
+function operator(n) {
 	const display = document.getElementsByClassName("display-input");
 
 	num1 = document.getElementsByClassName("display-input");
@@ -21,33 +21,20 @@ function operator(n, buttonElement) {
 	num1.value = "";
 
 	display[0].value = "";
-
-	const operatorButtons = document.getElementsByClassName("obtn");
-	for (let i = 0; i < operatorButtons.length; i++) {
-		operatorButtons[i].classList.remove("highlighted");
-	}
-
-	// Add the highlighted class to the clicked button
-	buttonElement.classList.add("highlighted");
-
 	return num1, symbol;
 }
 
 function calculate() {
-	const operatorButtons = document.getElementsByClassName("obtn");
-	for (let i = 0; i < operatorButtons.length; i++) {
-		operatorButtons[i].classList.remove("highlighted");
-	}
-
 	const display = document.getElementsByClassName("display-input");
 	num2 = document.getElementsByClassName("display-input");
+
+	console.log(num2[0].value);
 
 	let result;
 
 	switch (symbol) {
 		case "+":
-			result = parseInt(num1) + parseInt(num2);
-			console.log(result);
+			result = parseFloat(num1) + parseFloat(num2);
 			display[0].value = result;
 			break;
 		case "-":
@@ -65,9 +52,4 @@ function calculate() {
 		default:
 			return;
 	}
-}
-
-function clearDisplay() {
-	const display = document.getElementsByClassName("display-input");
-	display[0].value = "";
 }

@@ -22,9 +22,10 @@ function operator(n, buttonElement) {
 
 	display[0].value = "";
 
-	const operatorButtons = document.getElementsByClassName("obtn");
+	const operatorButtons = document.getElementsByClassName("operators");
 	for (let i = 0; i < operatorButtons.length; i++) {
 		operatorButtons[i].classList.remove("highlighted");
+		console.log(operatorButtons[i]);
 	}
 
 	// Add the highlighted class to the clicked button
@@ -34,19 +35,18 @@ function operator(n, buttonElement) {
 }
 
 function calculate() {
-	const operatorButtons = document.getElementsByClassName("obtn");
-	for (let i = 0; i < operatorButtons.length; i++) {
-		operatorButtons[i].classList.remove("highlighted");
-	}
-
 	const display = document.getElementsByClassName("display-input");
 	num2 = document.getElementsByClassName("display-input");
 
 	let result;
 
+	console.log(num1);
+	console.log(num2[0].value);
+	console.log(typeof symbol);
+
 	switch (symbol) {
 		case "+":
-			result = parseInt(num1) + parseInt(num2);
+			result = parseFloat(num1) + parseFloat(num2);
 			console.log(result);
 			display[0].value = result;
 			break;

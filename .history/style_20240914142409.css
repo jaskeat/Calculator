@@ -78,6 +78,6 @@ input {
 	margin: 5px;
 }
 
-.btn.highlighted {
-	background-color: #0080ff; /* Replace with your highlight color */
+.highlighted {
+	background-color: #abcdef; /* Replace with your highlight color */
 }

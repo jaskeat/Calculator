@@ -46,8 +46,7 @@ function calculate() {
 
 	switch (symbol) {
 		case "+":
-			result = parseInt(num1) + parseInt(num2);
-			console.log(result);
+			result = parseFloat(num1) + parseFloat(num2);
 			display[0].value = result;
 			break;
 		case "-":
