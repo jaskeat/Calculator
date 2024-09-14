@@ -15,7 +15,6 @@ function operator(n) {
 	num1 = num1[0].value;
 
 	symbol = n;
-	console.log(symbol);
 
 	num1.value = "";
 	console.log(num1, symbol);
@@ -24,9 +23,7 @@ function operator(n) {
 
 function calculate() {
 	num2 = document.getElementsByClassName("display-input");
-	num2 = num2[0];
-	console.log(num2);
-
+	console.log(num2[0].value);
 	let result;
 
 	switch (symbol) {
